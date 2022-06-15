@@ -1,0 +1,25 @@
+@use '../../scss/' as *;
+
+.btns {
+  @include flex(center, space-between);
+}
+.btn{
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: $text-color;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 1rem 3.2rem;
+  font-family: $font-family;
+  border-top-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+
+  &-main{
+    background-color: $main-color;
+  }
+
+  &-second{
+    background-color: $second-color;
+  }
+}
